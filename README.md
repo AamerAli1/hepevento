@@ -1,2 +1,0 @@
-# hepevento
-## Event Managing System
