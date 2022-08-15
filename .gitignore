@@ -124,8 +124,10 @@ celerybeat.pid
 # Environments
 .env
 .hepevento
+.QRs
 env/
 hepevento/
+QRs/
 ENV/
 env.bak/
 hepevento.bak/
