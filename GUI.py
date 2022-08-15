@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import filedialog
 import pandas as pd
 from qr import createqr
-
+from whatsapp import sendWhatsapp
 
  
 def openFile():
@@ -17,7 +17,7 @@ def openFile():
         email = list[i][3]
         guestcount = list[i][4]
         createqr(id,name,phonenumber,email)
-    
+        sendWhatsapp(name,phonenumber)
 
 
 root = Tk()

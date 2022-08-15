@@ -7,5 +7,4 @@ def createqr(id,name,phonenumber,email):
     qrcode.save(qrcodename)
 
 
-createqr(12,'testing','also test','aamer@test.com')
 
