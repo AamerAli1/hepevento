@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import filedialog
 import pandas as pd
+from qr import createqr
 
 
  
@@ -9,7 +10,14 @@ def openFile():
     df = pd.read_excel (filepath)
 
     list  = df.values.tolist()
-    print (list)
+    for i in range(len(list)):
+        id = list[i][0]
+        name = list[i][1]
+        phonenumber = list[i][2]
+        email = list[i][3]
+        guestcount = list[i][4]
+        createqr(id,name,phonenumber,email)
+    
 
 
 root = Tk()
